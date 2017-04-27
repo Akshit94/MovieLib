@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/trailer_layout_margin"
+    android:nestedScrollingEnabled="true"
+    tools:context="com.example.jainsaab.movielib.trailers.TrailerFragment">
+
+    <TextView
+        android:id="@+id/trailer_empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/trailers_not_available"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/detail_text_view_heading_text_size"
+        android:textStyle="italic" />
+
+    <ListView
+        android:scrollbars="none"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/listview_divider_ht"
+        android:id="@+id/trailer_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="true" />
+
+
+</FrameLayout>

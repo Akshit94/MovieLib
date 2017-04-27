@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "188661248989",
+    "firebase_url": "https://movielib-fa28b.firebaseio.com",
+    "project_id": "movielib-fa28b",
+    "storage_bucket": "movielib-fa28b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188661248989:android:c7ec62c52e5529b4",
+        "android_client_info": {
+          "package_name": "com.example.jainsaab.movielib"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188661248989-db1enk4al9ro64ve3je6hq9scnu89dnh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jainsaab.movielib",
+            "certificate_hash": "368721FA909F5FAEE60CBA01471EDDDBE30D5A63"
+          }
+        },
+        {
+          "client_id": "188661248989-j02brl4pl8qo0cv9hhcnedgs9ui61iro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi-P88tvzUy8yD6OWE2kq08woTU1A8Y_U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188661248989-j02brl4pl8qo0cv9hhcnedgs9ui61iro.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

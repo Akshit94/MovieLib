@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/trailer_item"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="@dimen/card_view_margin"
+    android:layout_marginStart="@dimen/card_view_margin"
+    android:layout_marginEnd="@dimen/card_view_margin"
+    android:elevation="@dimen/cardview_default_elevation"
+    app:cardCornerRadius="@dimen/cardview_corner_radius">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/primaryText"
+            android:layout_margin="@dimen/detail_text_view_heading_margin"
+            android:textSize="@dimen/title_text_size"
+            android:id="@+id/trailer_name"
+            tools:text="Trailer 1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_margin="@dimen/trailer_image_margin"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/trailer_image"
+                android:id="@+id/trailer_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trailer_image_height" />
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_play_arrow_black_48dp"
+                android:contentDescription="@string/trailer_image"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/trailer_image_size"
+                android:layout_height="@dimen/trailer_image_size" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

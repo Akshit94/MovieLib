@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="true"
+    tools:context="com.example.jainsaab.movielib.search.SearchFragment">
+
+    <GridView
+        android:id="@+id/grid_view_search_movies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="@dimen/grid_view_spacing"
+        android:nestedScrollingEnabled="true"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/grid_view_spacing" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true">
+
+        <FrameLayout
+            android:id="@+id/search_empty_view_box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/empty_search_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/empty_favourites_image_view_height"
+                android:contentDescription="@string/no_search_items"
+                android:scaleType="fitXY"
+                android:src="@drawable/empty_search" />
+
+            <TextView
+                android:id="@+id/empty_search_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="@dimen/empty_search_text_padding"
+                android:gravity="center"
+                android:text="@string/use_the_search_bar_to_search_for_movies"
+                android:textSize="@dimen/empty_search_text_size"
+                android:textStyle="italic" />
+
+        </FrameLayout>
+    </ScrollView>
+
+</FrameLayout>

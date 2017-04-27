@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_margin="@dimen/person_layout_margin"
+        android:layout_width="@dimen/person_layout_size"
+        android:layout_height="@dimen/person_layout_size">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/person_layout_size"
+            android:layout_height="@dimen/person_layout_size"
+            android:src="@drawable/ic_person_black_48dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/actor_profile_image"
+            android:layout_width="@dimen/person_layout_size"
+            android:layout_height="@dimen/person_layout_size" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/actor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primaryText"
+            android:textSize="@dimen/detail_text_view_normal_text_size"
+            tools:text="Margot Robbie" />
+
+        <TextView
+            android:id="@+id/character_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondaryText"
+            android:textSize="@dimen/subtitles_text_size"
+            tools:text="Harleen Quinzel / Harley Quinn" />
+    </LinearLayout>
+
+</LinearLayout>

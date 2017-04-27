@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:nestedScrollingEnabled="true"
+    android:layout_height="match_parent"
+    tools:context="com.example.jainsaab.movielib.favouriteMovies.FavouritesFragment">
+
+    <GridView
+        android:id="@+id/grid_view_favourite_movies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="@dimen/grid_view_spacing"
+        android:nestedScrollingEnabled="true"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/grid_view_spacing" />
+
+    <FrameLayout
+        android:id="@+id/favourite_empty_view_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:nestedScrollingEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:contentDescription="@string/no_favourites_yet"
+                    android:id="@+id/favourites_empty_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/empty_favourites_image_view_height"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/empty_favourite_state" />
+
+                <TextView
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:textStyle="italic"
+                    android:layout_gravity="top|center_horizontal"
+                    android:textSize="@dimen/title_text_size"
+                    android:gravity="center"
+                    android:text="@string/go_back_and_add_some_favourites_for_offline_access"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</FrameLayout>
